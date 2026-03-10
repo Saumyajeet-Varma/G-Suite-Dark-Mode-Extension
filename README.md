@@ -23,19 +23,19 @@ A sleek, lightweight Chrome Extension built with Manifest V3 to bring a unified 
 
 #### Clone the Repo:
 ```bash
-git clone https://github.com/Saumyajeet-Varma/g-suite-dark-mode.git
+git clone https://github.com/Saumyajeet-Varma/g-suite-dark-mode-extension.git
 ```
 #### Open Chrome Extensions:
-Go to `chrome://extensions/` in your browser.
+- Go to `chrome://extensions/` in your browser.
 
 #### Enable Developer Mode:
-Toggle the **Developer mode** switch in the top right corner.
+- Toggle the **Developer mode** switch in the top right corner.
 
 #### Load the Extension:
-Click **Load unpacked** and select the root folder of this project.
+- Click **Load unpacked** and select the root folder of this project.
 
 #### Pin & Use:
-Click the puzzle piece icon in your toolbar, pin **G-Suite Dark Mode**, and click it on any Google page!
+- Click the puzzle piece icon in your toolbar, pin **G-Suite Dark Mode**, and click it on any Google page!
 
 ---
 
