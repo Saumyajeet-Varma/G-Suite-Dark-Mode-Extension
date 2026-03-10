@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Google Suite Dark Mode",
+  "version": "1.0",
+  "permissions": ["scripting", "activeTab"],
+  "action": {
+    "default_title": "Toggle Google Dark Mode"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permission": [
+    "https://docs.google.com/*",
+    "https://mail.google.com/*",
+    "https://calendar.google.com/*",
+    "https://drive.google.com/*",
+    "https://keep.google.com/*",
+    "https://gemini.google.com/*"
+  ]
+}

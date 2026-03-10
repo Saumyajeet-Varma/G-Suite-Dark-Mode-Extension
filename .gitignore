@@ -1,0 +1,20 @@
+# IntelliJ IDEA files
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Chrome Extension / Web files
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+
+# Build outputs (if you start using a bundler like Webpack or Vite)
+dist/
+build/
+*.zip
+
+# Sensitive data
+.env
