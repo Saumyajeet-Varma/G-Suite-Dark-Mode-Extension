@@ -1,14 +1,16 @@
 let isDark = false;
 
-chrome.action.onClicked.addListener((tab) => {
-
-    isDark = !isDark;
-
-    chrome.scripting.executeScript({
-        target: {tabId: tab.id},
-        func: toggleDarkMode,
-        args: [isDark]
-    });
+chrome.runtime.onMessage.addListener((message) => {
+    if(message.action=="toggleDark"){
+        isDark = !isDark;
+        chrome.tabs.query({active:true, currentWindow:true},(tabs)=>{
+            chrome.scripting.executeScript({
+            target: {tabId: tabs[0].id},
+            func: toggleDarkMode,
+            args: [isDark]
+            });
+        })
+    }
 });
 
 function toggleDarkMode(enable) {

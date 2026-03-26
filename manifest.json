@@ -2,9 +2,10 @@
   "manifest_version": 3,
   "name": "Google Suite Dark Mode",
   "version": "1.0",
-  "permissions": ["scripting", "activeTab"],
+  "permissions": ["scripting", "activeTab","tabs"],
   "action": {
-    "default_title": "Toggle Google Dark Mode"
+    "default_title": "Toggle Google Dark Mode",
+    "default_popup": "popup/popup.html"
   },
   "background": {
     "service_worker": "background.js"

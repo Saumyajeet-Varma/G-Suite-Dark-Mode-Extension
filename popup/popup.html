@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <style>
+            body {
+                width:200px;
+                padding:16px;
+                font-family:sans-serif;
+                background:#000000;
+                margin:0;
+            }
+
+            h3 {
+                margin:0 0 12px 0;
+                font-size:14px;
+                color:#ffffff;;
+            }
+
+            #action-btn {
+                width:100%;
+                padding:10px;
+                border:none;
+                border-radius:8px;
+                cursor:pointer;
+                font-size:14px;
+                font-weight:bold;
+                background:#333;
+                color:#fff;
+                transition:background 0.2s;
+                }
+
+            #action-btn.active {
+                background: #ec3c10;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body >
+        <h3>Click below to change themes</h3>
+        <button id="action-btn">Enable</button>
+        <script src="popup.js"></script>
+    </body>
+</html>
