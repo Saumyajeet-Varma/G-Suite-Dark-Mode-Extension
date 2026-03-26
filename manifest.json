@@ -2,6 +2,12 @@
   "manifest_version": 3,
   "name": "Google Suite Dark Mode",
   "version": "1.0",
+  "icons": {
+    "16": "assets/icons/icon16.png",
+    "32": "assets/icons/icon32.png",
+    "48": "assets/icons/icon48.png",
+    "128": "assets/icons/icon128.png"
+  },
   "permissions": ["scripting", "activeTab","tabs"],
   "action": {
     "default_title": "Toggle Google Dark Mode",
