@@ -5,7 +5,7 @@ chrome.action.onClicked.addListener((tab) => {
     isDark = !isDark;
 
     chrome.scripting.executeScript({
-        target: {tabId: tab.id},
+        target: { tabId: tab.id },
         func: toggleDarkMode,
         args: [isDark]
     });
@@ -16,8 +16,8 @@ function toggleDarkMode(enable) {
     const id = "sheets-dark-theme-style";
     let style = document.getElementById(id);
 
-    if(enable) {
-        if(!style) {
+    if (enable) {
+        if (!style) {
 
             style = document.createElement("style");
             style.id = id;
@@ -55,7 +55,7 @@ function toggleDarkMode(enable) {
         }
     }
     else {
-        if(style) {
+        if (style) {
             style.remove();
         }
     }
